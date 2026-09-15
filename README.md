@@ -198,6 +198,40 @@ contract is a change for both clients at once.
 
 ---
 
+## Security posture
+
+Stated precisely, including what is not yet done — a security claim that
+overstates the implementation is worse than no claim at all.
+
+**In place**
+
+- **18+ enforced server-side at three layers**, computed from the date of birth
+  rather than a checkbox, and not disableable from the admin panel.
+- **Passwords** hashed with `scrypt` and a per-user salt, compared in constant
+  time. Sessions are an opaque server-validated cookie (`HttpOnly`,
+  `SameSite=Lax`, `Secure` in production) — no client-readable token payload.
+- **Authorisation enforced server-side on every route.** Client-supplied
+  identifiers are treated as input, never as proof of ownership. Blocks are
+  enforced on the read path, so a blocked party cannot reappear through
+  discovery, matches or notifications.
+- **Security headers** applied in middleware: a restrictive CSP
+  (`frame-ancestors`, `object-src`, `base-uri`, `form-action`), HSTS,
+  `nosniff`, `X-Frame-Options: DENY`, a referrer policy and a permissions
+  policy. `x-powered-by` is disabled and API responses are `no-store`.
+- **Parameterised queries only** through the ORM; no string-built SQL.
+- **Secrets** are environment variables only — the repository tracks
+  `.env.example` with placeholders and nothing else.
+
+**Not yet in place**
+
+- No MFA on the admin surface, and no immutable audit log for admin actions.
+- Rate limiting is in-memory and therefore per-instance — it needs a shared
+  store before the service scales horizontally.
+- No media scanning pipeline for uploads, and no shared schema-validation layer
+  at API boundaries.
+
+---
+
 ## Deployment
 
 The application ships as a single container image built in CI:
@@ -215,8 +249,8 @@ https://nlidhje-web.onrender.com
 
 Keeping the image pipeline in CI rather than in the host means the deployed
 artifact is reproducible and the application source never has to be published
-to be deployed. The repository also contains a `render.yaml` blueprint and a
-`Dockerfile` so the service can be reproduced on any container host.
+to be deployed. The private production repository carries a `Dockerfile` and a
+`render.yaml` blueprint, so the service can be reproduced on any container host.
 
 **Production configuration**
 
@@ -235,7 +269,8 @@ is functional end to end. The mobile client is maintained alongside it.
 Known limitations, stated plainly:
 
 - The public demo is stateless by design and resets periodically.
-- Billing runs in sandbox mode; no live payment processing is enabled.
+- Billing is not enabled in the demo — no payment provider keys are configured.
+  The Stripe integration points exist in the code but are unexercised.
 - Identity verification is a request/review workflow, not an integrated
   third-party KYC provider.
 

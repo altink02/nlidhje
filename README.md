@@ -41,9 +41,13 @@ around — a seeded profile is available:
 |---|---|
 | ![Control Center](docs/screenshots/06-control-center.png) | ![Safety and reporting](docs/screenshots/05-safety.png) |
 
-| Landing page | Mobile client |
+| Landing page | Mobile web (390 px) |
 |---|---|
-| ![Landing page](docs/screenshots/01-landing.png) | ![Mobile client](docs/screenshots/07-mobile-discovery.png) |
+| ![Landing page](docs/screenshots/01-landing.png) | ![Responsive web layout at a 390px viewport](docs/screenshots/07-mobile-discovery.png) |
+
+> All screenshots are of the **web application**, including the 390 px capture
+> above, which shows the responsive layout rather than the native client. The
+> Expo/React Native workspace is a separate client and is not pictured here.
 
 ---
 

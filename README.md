@@ -1,3 +1,5 @@
+**Altin Kalludra** · [Download CV (PDF)](https://github.com/ulasmango-cmd/atlascall-portfolio/raw/refs/heads/main/cv/Altin-Kalludra-CV.pdf)
+
 <div align="center">
 
 # N'Lidhje
@@ -296,7 +298,7 @@ production implementation.
 
 ## Ownership
 
-Built by **Flamur** — designed, engineered and deployed end to end, including
+Built by **Altin Kalludra** — designed, engineered and deployed end to end, including
 the data model, API surface, web client, mobile client, and the deployment
 pipeline.
 

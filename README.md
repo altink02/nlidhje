@@ -1,4 +1,4 @@
-**Altin Kalludra** · [Download CV (PDF)](https://github.com/ulasmango-cmd/atlascall-portfolio/raw/refs/heads/main/cv/Altin-Kalludra-CV.pdf)
+**Altin Kalludra** · [All projects](https://github.com/altink02/fxquant-portfolio/blob/main/PORTFOLIO.md) · [Download CV (PDF)](https://github.com/altink02/atlascall-portfolio/raw/refs/heads/main/cv/Altin-Kalludra-CV.pdf)
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 Discover people by intent, not just proximity — with safety, verification and
 privacy built into the foundation rather than bolted on afterwards.
 
-[Live Demo](https://nlidhje-web.onrender.com) · [Architecture](ARCHITECTURE.md) · [Report an issue](https://github.com/ulasmango-cmd/nlidhje/issues)
+[Live Demo](https://nlidhje-web.onrender.com) · [Architecture](ARCHITECTURE.md) · [Report an issue](https://github.com/altink02/nlidhje/issues)
 
 </div>
 
@@ -291,7 +291,7 @@ production implementation.
 | | |
 |---|---|
 | **This repository** | Public portfolio presentation |
-| **Production source** | Private (`ulasmango-cmd/nlidhje-source`) |
+| **Production source** | Private (`altink02/nlidhje-source`) |
 | **Live application** | https://nlidhje-web.onrender.com |
 
 ---
@@ -302,7 +302,7 @@ Built by **Altin Kalludra** — designed, engineered and deployed end to end, in
 the data model, API surface, web client, mobile client, and the deployment
 pipeline.
 
-- GitHub: [Altin Kalludra](https://github.com/ulasmango-cmd)
+- GitHub: [Altin Kalludra](https://github.com/altink02)
 - Location: Kosovo
 
 ---

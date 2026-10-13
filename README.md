@@ -302,7 +302,7 @@ Built by **Altin Kalludra** — designed, engineered and deployed end to end, in
 the data model, API surface, web client, mobile client, and the deployment
 pipeline.
 
-- GitHub: [@ulasmango-cmd](https://github.com/ulasmango-cmd)
+- GitHub: [Altin Kalludra](https://github.com/ulasmango-cmd)
 - Location: Kosovo
 
 ---

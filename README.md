@@ -34,6 +34,8 @@ around — a seeded profile is available:
 
 ## Screenshots
 
+> These captures document an earlier interface version. For the latest landing-page design, visit the [live showroom](https://nlidhje-web.onrender.com). The private application source contains the updated interface.
+
 | Discovery deck | Premium plans |
 |---|---|
 | ![Discovery deck](docs/screenshots/02-discovery.png) | ![Premium plans](docs/screenshots/03-premium.png) |

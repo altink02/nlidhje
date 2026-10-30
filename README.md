@@ -4,12 +4,11 @@
 
 # N'Lidhje
 
-**A Kosovo-first, global-ready dating platform for adults 18+.**
+**A Kosovo-first, globally minded connection and discovery experience.**
 
-Discover people by intent, not just proximity — with safety, verification and
-privacy built into the foundation rather than bolted on afterwards.
+Discover people through shared intentions and meaningful conversations — with privacy, verification, and safety designed in from the start.
 
-[Live Demo](https://nlidhje-web.onrender.com) · [Architecture](ARCHITECTURE.md) · [Report an issue](https://github.com/altink02/nlidhje/issues)
+[Explore the refreshed showroom](https://nlidhje-web.onrender.com) · [Architecture](ARCHITECTURE.md) · [Report an issue](https://github.com/altink02/nlidhje/issues)
 
 </div>
 
@@ -17,7 +16,7 @@ privacy built into the foundation rather than bolted on afterwards.
 
 ## Live Demo
 
-**https://nlidhje-web.onrender.com**
+**[Open N'Lidhje's product showroom](https://nlidhje-web.onrender.com)**
 
 The demo runs on a free instance, so the first request after a period of
 inactivity can take up to a minute to wake up. No sign-up is required to look
@@ -89,7 +88,7 @@ code, infrastructure configuration and credentials are private.
 **Trust and safety**
 - Multi-level verification requests with a verified badge on profiles
 - Blocking, reporting and profile pausing as first-class, persisted actions
-- 18+ enforcement at the data layer, not just a checkbox
+- Server-enforced age eligibility alongside reporting and blocking
 - Safety centre with reporting categories and a documented escalation path
 
 **Account and privacy**
